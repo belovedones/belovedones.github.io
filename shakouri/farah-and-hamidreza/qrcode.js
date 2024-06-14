@@ -12,7 +12,7 @@ qrcodes = [
         ,mtx   :  -1
         ,ecl   :  "H"
         ,ecb   :   1
-        ,pal   : ["#037", "#f2f4f8"]
+        ,pal   : ["#000", "#fff"]
         ,vrb   :   0
 
     })
