@@ -7,39 +7,41 @@
     <head>
         <link href="../../lib/video-js.css" rel="stylesheet" />
         <script src="../../lib/videojs-ie8.min.js"></script>
+        <script src="../../lib/video.min.js"></script>
+        <script src="../../lib/qrcode.min.js"></script>
+        <style>
+            html {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                min-height: 100%;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                min-height: 100%;
+            }
+            video {
+                display: block;
+                min-height: 100%;
+                min-width: 100%;
+                width: auto;
+            }
+        </style>
     </head>
-    <style>
-        html {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            min-height: 100%;
-        }
-        body {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            min-height: 100%;
-        }
-        video {
-            display: block;
-            min-height: 100%;
-            min-width: 100%;
-            width: auto;
-        }
-    </style>
 </head>
 <body>
   <video
-  id="hamid-and-farah"
-  class="video-js"
-  controls
-  preload="auto"
-  width="640"
-  height="264"
-  poster="./farah-and-hamidreza.jpg"
-  data-setup="{}"
->
+    id="hamid-and-farah"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="./farah-and-hamidreza.jpg"
+    data-setup="{}"
+  >
   <source src="./farah-and-hamidreza.mp4" type="video/mp4" />
   <source src="./farah-and-hamidreza.webm" type="video/webm" />
   <p class="vjs-no-js">
@@ -49,7 +51,8 @@
       >supports HTML5 video</a
     >
   </p>
+  <div id="qr-reader-results"></div>
 </video>
-  <script src="../../lib/video.min.js"></script>
+<script src="./qrcode.js"></script>
 </body>
 </html>
